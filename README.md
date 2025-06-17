@@ -39,14 +39,14 @@
 ## 🏗️ Architecture
 
 <details>
-<summary>🔧 Click to Expand Architecture Diagram (Mermaid)</summary>
+<summary>🔧 Click to Expand Architecture Diagram</summary>
 
 ```mermaid
 graph TD
-  A[📄 PDF Upload via Colab] --> B[🧾 PyPDFLoader (LangChain)]
-  B --> C[📚 Text Splitter (Recursive Chunking)]
-  C --> D[🔡 Nomic-Embed Embeddings (Ollama)]
-  D --> E[📂 ChromaDB Vector Store]
-  E --> F[🔍 Retriever with MMR Search]
-  F --> G[🧠 DeepSeek-R1 LLM (via Ollama)]
-  G --> H[💬 Final Answer + Source Documents]
+  A[PDF Upload via Colab] --> B[PyPDFLoader (LangChain)]
+  B --> C[Text Splitter (Recursive Chunking)]
+  C --> D[Nomic-Embed Embeddings (Ollama)]
+  D --> E[ChromaDB Vector Store]
+  E --> F[Retriever with MMR Search]
+  F --> G[DeepSeek-R1 LLM (Ollama)]
+  G --> H[Final Answer + Source Documents]
