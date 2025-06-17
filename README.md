@@ -27,7 +27,6 @@
 
 ## 🏗️ Architecture
 
-```mermaid
 graph TD
   A[PDF Upload via Colab] --> B[PyPDFLoader (LangChain)]
   B --> C[Text Splitter (Recursive Chunking)]
@@ -35,4 +34,5 @@ graph TD
   D --> E[ChromaDB Vector Store]
   E --> F[Retriever with MMR Search]
   F --> G[DeepSeek-R1 LLM (Ollama)]
-  G --> H[Final Answer + Source Documents]
+  G --> H[Answer + Source Documents]
+
