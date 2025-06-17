@@ -38,8 +38,7 @@
 
 ## 🏗️ Architecture
 
-<details>
-<summary>🔧 Click to Expand Architecture Diagram</summary>
+## 🏗️ Architecture
 
 ```mermaid
 graph TD
@@ -50,3 +49,4 @@ graph TD
   E --> F[Retriever with MMR Search]
   F --> G[DeepSeek-R1 LLM (Ollama)]
   G --> H[Final Answer + Source Documents]
+
