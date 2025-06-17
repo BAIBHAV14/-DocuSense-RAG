@@ -4,39 +4,26 @@
 ![LLM](https://img.shields.io/badge/DeepSeek-LLM-orange?logo=OpenAI)  
 ![Status](https://img.shields.io/badge/Project-Type-Research%20%7C%20Resume%20Ready-brightgreen)  
 
-> An intelligent RAG-based system that lets you query uploaded PDFs using powerful language models and custom embeddings.
+> A PDF Question Answering system using Retrieval-Augmented Generation (RAG) with LangChain, Ollama LLMs, and ChromaDB.
 
 ---
 
 ## 🚀 Overview
 
-**DocuSense** is a Retrieval-Augmented Generation (RAG) pipeline that allows users to query their own documents in natural language. It combines LangChain, DeepSeek (via Ollama), Nomic-Embed, and ChromaDB for full PDF-to-answer functionality.
+**DocuSense** is a smart PDF assistant built using LangChain, DeepSeek-R1 LLM (via Ollama), and ChromaDB. It leverages vector embeddings to retrieve and synthesize contextually relevant answers from uploaded documents in real-time.
 
 ---
 
-### 🏗️ Stack
+## 🧰 Tech Stack
 
-- **LangChain** for chaining, retrieval & orchestration  
-- **DeepSeek-R1 (via Ollama)** for LLM-based responses  
-- **Nomic-Embed Text** for generating custom vector embeddings  
-- **ChromaDB** as the vector store  
-- **PyPDF + Recursive Splitter** for parsing & chunking  
-- **Python + Colab** for implementation and testing
-
----
-
-## 📂 Features
-
-✅ Upload one or more PDFs  
-✅ Process & chunk documents with context overlap  
-✅ Embed using Nomic (Ollama) or OpenAI  
-✅ Smart retrieval using **MMR Search**  
-✅ Ask context-aware questions with accurate source tracing  
-✅ Clean code, modular structure — ready for demos and research
+- **Python 3.10**
+- **LangChain** (RetrievalQA + document loaders)
+- **Ollama** with **DeepSeek-R1** for LLM inference
+- **Nomic-Embed Text** for generating vector embeddings
+- **ChromaDB** for semantic vector storage and fast retrieval
+- **Google Colab** for notebook-based interactivity
 
 ---
-
-## 🏗️ Architecture
 
 ## 🏗️ Architecture
 
@@ -49,4 +36,3 @@ graph TD
   E --> F[Retriever with MMR Search]
   F --> G[DeepSeek-R1 LLM (Ollama)]
   G --> H[Final Answer + Source Documents]
-
