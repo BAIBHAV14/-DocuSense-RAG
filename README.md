@@ -25,14 +25,11 @@
 
 ---
 
-## 🏗️ Architecture
 
-graph TD
-  A[PDF Upload via Colab] --> B[PyPDFLoader (LangChain)]
-  B --> C[Text Splitter (Recursive Chunking)]
-  C --> D[Nomic-Embed Embeddings (Ollama)]
-  D --> E[ChromaDB Vector Store]
-  E --> F[Retriever with MMR Search]
-  F --> G[DeepSeek-R1 LLM (Ollama)]
-  G --> H[Answer + Source Documents]
+
+## 🏗️ DocuSense Architecture
+
+The following diagram illustrates the internal workflow of the DocuSense RAG system — from PDF ingestion to LLM-driven QA output:
+
+![DocuSense Architecture](mermaid-diagram-2025-06-18-011446.png)
 
